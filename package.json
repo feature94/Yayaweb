@@ -1,0 +1,18 @@
+{
+  "name": "yayaweb",
+  "version": "1.0.0",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "msgpack5": "^6.0.2",
+    "uglify-js": "^3.19.3",
+    "ws": "^8.18.0"
+  },
+  "description": ""
+}

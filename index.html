@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beast Awakened</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div id="startMenu" class="start-menu">
+        <h1 class="title">Beast Awakened</h1>
+        
+        <div class="menuSection">
+            <input type="text" id="playerName" placeholder="Enter your name" maxlength="16" class="input-field">
+            
+            <div class="colorPicker">
+                <label>Skin Color:</label>
+                <input type="color" id="skinColor" value="#7D5C4F" class="color-input">
+            </div>
+    
+            <div class="settings">
+                <label>
+                    <input type="checkbox" id="showPing"> Show Ping
+                </label>
+                <label>
+                    <input type="checkbox" id="nativeResolution"> Native Resolution
+                </label>
+            </div>
+            <button id="enterGame" class="play-button">Play Game</button>
+            <div class="battle-mode-container">
+                <button id="battleModeBtn" class="battle-mode-btn">
+                    Battle Mode
+                    <span class="mode-status">OFF</span>
+                    <div class="demon-face"></div>
+                </button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <h2>Controls</h2>
+            <ul>
+                <li>WASD - Move</li>
+                <li>Left Click/Space - Attack</li>
+                <li>E - Toggle Auto-Attack</li>
+                <li>Hit Trees for Wood</li>
+                <li>Hit Rocks for Stone</li>
+                <li>Hit Bushes for Apples</li>
+            </ul>
+        </div>
+    
+        
+    </div>
+    
+    <!-- Add this before the canvas -->
+    <body>
+        <div id="shopBtn" class="shop-button">
+            <i class="material-icons">&#xE8D1;</i>
+        </div>
+    </body>
+    <body>
+        <div id="shopMenu" class="shop-menu">
+            <div class="shop-item">
+                
+                <div class="item-left">
+                    <img src="art/snow_hat.png" alt="Snow Hat" class="item-image">
+                    <span class="item-name">Snow Hat</span>
+                </div>
+                <div class="item-right">
+                    <span class="item-price">1000</span>
+                    <button class="item-button" data-item="snow_hat" data-price="1000">Buy</button>
+                </div>
+            </div>
+            
+            <div class="shop-item">
+                <div class="item-left">
+                    <img src="art/soldier_hat.png" alt="Soldier Hat" class="item-image">
+                    <span class="item-name">Soldier Hat</span>
+                </div>
+                <div class="item-right">
+                    <span class="item-price">4000</span>
+                    <button class="item-button" data-item="soldier_hat" data-price="4000">Buy</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <div class="item-left">
+                    <img src="art/speed_hat.png" alt="Speed Hat" class="item-image">
+                    <span class="item-name">Speed Hat</span>
+                </div>
+                <div class="item-right">
+                    <span class="item-price">6000</span>
+                    <button class="item-button" data-item="speed_hat" data-price="6000">Buy</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    
+    
+
+
+
+    <div class="weaponButton" id="swordButton">
+        <img src="art/sword_1.png" alt="Sword">
+    </div>
+    <div class="weaponInfo" id="swordInfo">
+        Sword<br>
+        ↑ Range<br>
+        ↑ Damage<br>
+        Perfect for combat
+    </div>
+    <div class="weaponButton" id="daggersButton">
+        <img src="art/daggers_1.png" alt="Daggers">
+    </div>
+    <div class="weaponButton" id="stickButton">
+        <img src="art/stick_1.png" alt="Stick">
+    </div>
+    <div class="weaponInfo" id="stickInfo">
+        Stick<br>
+        ↑ Gathering<br>
+        ↓ Damage<br>
+        Perfect for resources
+    </div>
+    <div class="weaponButton" id="cookieButton">
+        <img src="art/cookie_1.png" alt="Cookie">
+    </div>
+    <div class="weaponInfo" id="cookieInfo">
+        Cookie<br>
+        ↑ Healing<br>
+        ↑ Speed Boost<br>
+        Perfect for survival
+    </div>
+    <div class="weaponButton" id="stoneWallButton">
+        <img src="art/stonewall_1.png" alt="Stone Wall">
+    </div>
+    <div class="weaponInfo" id="stoneWallInfo">
+        Stone Wall<br>
+        ↑ Defense<br>
+        ↑ Protection<br>
+        Perfect for defense
+    </div>
+    <div class="weaponButton" id="trapButton">
+        <img src="art/trap_1.png" alt="Trap">
+    </div>
+    <div class="weaponInfo" id="trapInfo">
+        Trap<br>
+        ↑ Damage<br>
+        ↑ Defense<br>
+        Perfect for trapping enemies
+    </div>
+    <div class="weaponButton" id="boostButton">
+        <img src="art/boost_1.png" alt="Boost">
+    </div>
+    <div class="weaponInfo" id="boostInfo">
+        Boost<br>
+        ↑ Speed<br>
+        ↑ Attack Speed<br>
+        Perfect for chasing enemies
+    </div>
+    <div class="weaponButton" id="katanaButton">
+        <img src="art/katana_1.png" alt="Katana">
+    </div>
+    <div class="weaponInfo" id="katanaInfo">
+        Katana<br>
+        ↑↑ Damage<br>
+        ↑ Range<br>
+        Perfect for slaying
+    </div>
+    <div class="weaponButton" id="bowButton">
+        <img src="art/bow_1.png" alt="Bow">
+    </div>
+    <div class="weaponInfo" id="bowInfo">
+        Bow<br>
+        ↑↑ Range<br>
+        ↑ Attack Speed<br>
+        Perfect for distance
+    </div>
+    
+    
+    <div class="toolbar">
+        <div class="toolbar-slot" id="slot1"></div>
+        <div class="toolbar-slot" id="slot2"></div>
+        <div class="toolbar-slot" id="slot3"></div>
+        <div class="toolbar-slot" id="slot4"></div>
+        <div class="toolbar-slot" id="slot5"></div>
+        <div class="toolbar-slot" id="slot6"></div>
+        <div class="toolbar-slot" id="slot7"></div>
+        <div class="toolbar-slot" id="slot8"></div>
+    </div>    
+    <div class="weaponInfo" id="daggersInfo">
+        Daggers<br>
+        ↑ Attack Speed<br>
+        ↑ Movement Speed<br>
+        ↓ Damage<br>
+        Perfect for speed
+    </div>
+    
+    <canvas id="gameCanvas"></canvas>
+    <canvas id="minimap"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/msgpack5@6.0.2/dist/msgpack5.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
